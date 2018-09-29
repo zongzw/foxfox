@@ -1,3 +1,17 @@
+# Repo Introduction
+
+This is a repo for testing sslforfree certificate application. 
+
+The application is deployed in chinabluemix.net, however, that platform is too simple to deploy https application. 
+
+Only http domain is supported. 
+
+After running it locally, the certificate chain looks like:
+
+> DST Root CA X3
+>> Let's Encrypt Authority X3
+>>> foxfox.mychinabluemix.net
+
 # Python Starter Overview
 
 The Python Starter demonstrates a simple, reusable Python web application.
