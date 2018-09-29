@@ -2,7 +2,9 @@ applications:
 - path: .
   memory: 128M
   instances: 1
-  domain: mychinabluemix.net
   name: foxfox
-  host: foxfox
   disk_quota: 1024M
+  buildpacks:
+  - python_buildpack
+  routes:
+  - route: foxfox.mychinabluemix.net
