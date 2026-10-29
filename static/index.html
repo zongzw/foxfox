@@ -1,6 +1,30 @@
-
-
-<div id="logo-container"></div>
-<span><i>from metamask</i></span>
-<script src="bundle.js"></script>
-  
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小兔子 · Low-poly Rabbit</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f3efe7; color: #303b36; font-family: system-ui, sans-serif; }
+    main { width: min(100%, 720px); padding: 36px 24px; text-align: center; }
+    .eyebrow { font-size: 12px; letter-spacing: .24em; color: #738075; }
+    h1 { margin: 14px 0 0; font-size: clamp(30px, 6vw, 46px); font-weight: 550; letter-spacing: -.03em; }
+    #logo-container { display: flex; justify-content: center; }
+    svg { max-width: 100%; height: auto; overflow: visible; }
+    p { color: #657067; font-size: 14px; line-height: 1.8; }
+    a { display: inline-block; margin-top: 12px; color: #465f50; text-underline-offset: 5px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">THE LITTLE POLYGON COLLECTION / 02</div>
+    <h1>遇见小兔子</h1>
+    <div id="logo-container" role="img" aria-label="跟随鼠标转头的立体低多边形兔子"></div>
+    <p>移动鼠标，小兔子会看向你。<br>长耳朵、粉鼻子，还有两颗小门牙。</p>
+    <a href="fox.html">看看原来的小狐狸 ↗</a>
+  </main>
+  <script src="rabbit.js"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>

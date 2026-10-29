@@ -1960,6 +1960,7 @@ function setAttribute (node, attribute, value) {
 
 module.exports = function createLogo (options_) {
   var options = options_ || {}
+  var foxJSON = options.model || require('./fox.json')
 
   var followCursor = !!options.followMouse
   var slowDrift = !!options.slowDrift
@@ -2492,9 +2493,10 @@ function injectMascot(container){
   var viewer = ModelViewer({
 
     // Dictates whether width & height are px or multiplied
-    pxNotRatio: false,
-    width: 0.10,
-    height: 0.10,
+    model: window.rabbitModel,
+    pxNotRatio: !!window.rabbitModel,
+    width: window.rabbitModel ? Math.min(520, window.innerWidth - 48) : 0.10,
+    height: window.rabbitModel ? Math.min(520, window.innerWidth - 48) : 0.10,
     minWidth: 200,
 
     followMouse: !isMobile,
